@@ -1,7 +1,9 @@
 html, body {
     margin: 0;
 }
+
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
@@ -13,8 +15,7 @@ body {
     margin: 0 auto;
     background-color: aquamarine;
 }
-
-main {
+.main {
     display: flex;
     flex-flow: column;
     width: 85%;
@@ -22,13 +23,58 @@ main {
 
 .menu {
     width: 15%;
-    background-color: aqua;
-    padding: 10px 20px 0px;
+    background:#b1d34b;
+}
+
+.menu ul {
+    font-size: 10px;
+    padding: 0px 0 10px 0;
+    margin: 0;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    padding:5px;
+    margin: 2px;
+    list-style: none;
+    background: #fff;
+    border-radius: 5px;
+    color: #00995d;
+    background: #FFF;
+    text-decoration: none;
+    display: block;
+}
+
+.menu ul li a:hover {
+    color: #FFF;
+    background: #00995d;
+    text-decoration: none;
 }
 
 .header {
-    background-color: rgb(5, 108, 108);
+    background: #00995d;
     min-height: 150px;
+}
+
+.header img {
+    width: 100px;
+    border-radius: 100px;
+    float: left;
+    margin:20px 20px 23px 25px;
+    border: 2px solid #fff;
+}
+
+.header span {
+    align-items: center;
+}
+
+.header h1 {
+    float: left;
+    margin: 50px 20px;
+    color: #fff;
 }
 
 .content {
@@ -37,7 +83,34 @@ main {
     padding: 20px;
 }
 
-footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+.content h1 {
+    font-size: 25px;
+    color: #00995d;
+}
+
+.content p {
+    font-size: 12px;
+}
+
+.footer {
+    background: #00995d;
+    color: #FFF;
+}
+
+.footer p {
+    padding: 10px 20px 0 20px;
+    color: #FFF;
+    margin: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #b1d34b;
+}
+
+.footer h6 {
+    font-size: 6px;
+    float: right;
+    padding: 10px;
+    margin: 0;
 }
